@@ -75,7 +75,7 @@ define(['N/ui/serverWidget', 'N/http'], function (serverWidget, http) {
 
             response.writePage(form);
         } else {
-            var country = request.parameters.custpage_country;
+            var country = request.parameters.custpage_jj_country;
             var url = 'http://universities.hipolabs.com/search?country=' + (country);
             var httpResponse = http.get({
                 url: url
