@@ -40,7 +40,7 @@ define(['N/currentRecord', 'N/record', 'N/search', 'N/url'],
                 let status = scriptContext.currentRecord.getValue({
                     fieldId: 'status'
                 });
-// Test
+// testt
                 let departmentId = scriptContext.currentRecord.getValue({
                     fieldId: 'departmentname'
                 });
