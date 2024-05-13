@@ -219,7 +219,7 @@ define(['N/ui/serverWidget', 'N/currentRecord', 'N/error', 'N/record', 'N/search
                 //Search to find Sales Orders to be fulfilled & billed.
                 let createSavedSearch = search.create({
                     title: 'Sales order search',
-                    id: 'customsearch238',
+                    id: 'customsearch_jj__salesorder_status',
                     type: search.Type.SALES_ORDER,
                     columns: ['entity', 'trandate', 'subsidiary', 'department', 'total', 'tranid', 'status', 'class', 'line'],
                     //adding custom filters to the search
