@@ -2,7 +2,25 @@
  * @NApiVersion 2.1
  * @NScriptType Suitelet
  */
-
+/*****************************************************************************************************************************************************************************************
+**************************
+*
+*${OTP-7202 }:${Custom page for display sales order based on the status}
+*
+******************************************************************************************************************************************************************************************
+**************************
+ *
+ * Author : Jobin and Jismi
+ *
+ * Date Created : 13-May-2024
+ *
+ * Created by :Gopinath M , Jobin and Jismi IT Services.
+ *
+ * Description : Custom page for display sales order based on the status.
+ *
+ *
+*****************************************************************************************************************************************************************************************
+******************************/
 define(['N/ui/serverWidget', 'N/currentRecord', 'N/error', 'N/record', 'N/search', 'N/format'],
     (serverWidget, currentRecord, error, record, search, format) => {
         /**
@@ -201,7 +219,7 @@ define(['N/ui/serverWidget', 'N/currentRecord', 'N/error', 'N/record', 'N/search
                 //Search to find Sales Orders to be fulfilled & billed.
                 let createSavedSearch = search.create({
                     title: 'Sales order search',
-                    id: 'customsearch238',
+                    id: 'customsearch_jj__salesorder_status',
                     type: search.Type.SALES_ORDER,
                     columns: ['entity', 'trandate', 'subsidiary', 'department', 'total', 'tranid', 'status', 'class', 'line'],
                     //adding custom filters to the search

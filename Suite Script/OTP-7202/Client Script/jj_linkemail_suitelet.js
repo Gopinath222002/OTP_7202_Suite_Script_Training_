@@ -3,7 +3,25 @@
  * @NScriptType ClientScript
  * @NModuleScope SameAccount
  */
-
+/*****************************************************************************************************************************************************************************************
+**************************
+*
+*${OTP-7202 }:${Custom page for display sales order based on the status}
+*
+******************************************************************************************************************************************************************************************
+**************************
+ *
+ * Author : Jobin and Jismi
+ *
+ * Date Created : 13-May-2024
+ *
+ * Created by :Gopinath M , Jobin and Jismi IT Services.
+ *
+ * Description : Custom page for display sales order based on the status.
+ *
+ *
+*****************************************************************************************************************************************************************************************
+******************************/
 
 define(['N/currentRecord', 'N/record', 'N/search', 'N/url'],
     /**
@@ -40,7 +58,6 @@ define(['N/currentRecord', 'N/record', 'N/search', 'N/url'],
                 let status = scriptContext.currentRecord.getValue({
                     fieldId: 'status'
                 });
-// Test
                 let departmentId = scriptContext.currentRecord.getValue({
                     fieldId: 'departmentname'
                 });
